@@ -4,3 +4,20 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.toastify {
+  min-width: 220px;
+  background-color: rgb(255, 0, 0);
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+}
+
+.hide-toastify {
+  transform: translateX(160%);
+  transition: all 1s ease;
+}

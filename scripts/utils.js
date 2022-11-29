@@ -15,3 +15,12 @@ const createElement = function (tagName, className, content) {
     }
     return newElement
 }
+
+
+
+const toastifyFunc = (icon, message, color) => {
+    $(".toastify").style.backgroundColor = color;
+    $(".toastify").innerHTML = ` <span id="notif-icon"> ${icon} </span> 
+    <strong id="notife-message" class="text-white mx-2 fs-5"> ${message} </strong> `;
+    $('.toastify').classList.remove('hide-toastify');
+}

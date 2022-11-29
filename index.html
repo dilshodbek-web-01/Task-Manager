@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BT ICON link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- BT min css -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- main css -->
@@ -25,12 +27,63 @@
 
     <!-- main start -->
     <main>
+
+        <!-- toastify start -->
+            <div class="toastify p-2 d-flex align-items-center justify-content-around rounded-2 me-4 hide-toastify">
+                
+            </div>
+        <!-- toastify end -->
+
+
+        <!-- modal content start -->
+
+        <!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">EDIT DATA</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+            <form action="#" id="edit">
+                            
+                <label for="editTitle" class="w-100 my-3">
+                    <input type="text" class="form-control p-3" placeholder="Enter task title" id="editTitle" required>
+                </label>
+
+                <label for="editDesc" class="w-100 my-3">
+                    <input type="text" class="form-control p-3" placeholder="Enter task description" id="editDesc" required>
+                </label>
+
+                <label for="editDate" class="w-100 my-3">
+                    <input type="date" class="form-control p-3" id="editDate" required>
+                </label>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Save changes</button>
+                </div>
+
+            </form>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+        <!-- modal content end -->
+
         <section id="main">
             <div class="container">
                 <div class="row my-3">
                     <div class="col-md-4 p-3 shadow">
                         <h3 class="text-success text-center">Add new task</h3>
                         <form action="#" id="add">
+
                             <label for="taskTitle" class="w-100 my-3">
                                 <input type="text" class="form-control p-3" placeholder="Enter task title" id="taskTitle" required>
                             </label>
@@ -68,6 +121,7 @@
 
     <!-- main end -->
 </body>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./scripts/utils.js"></script>
 <script src="./scripts/script.js"></script>
 </html>
