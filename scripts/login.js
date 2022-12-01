@@ -29,6 +29,7 @@ const login = (e) => {
             .then((result) => {
                 if (result.code === 1) {
                     localStorage.setItem("token", result.data.token);
+                    localStorage.setItem("user", result.data.username);
                     alert(` ${result.data.username} welcome to admin dashboard`);
                     setInterval(() => {
                         location.replace('./index.html');

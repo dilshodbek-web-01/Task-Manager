@@ -17,7 +17,7 @@ const createElement = function (tagName, className, content) {
 }
 
 
-
+// ===================== TOASTIFY start ======================= //
 const toastifyFunc = (icon, message, color) => {
     $(".toastify").style.backgroundColor = color;
     $(".toastify").innerHTML = ` <span id="notif-icon"> ${icon} </span> 

@@ -163,3 +163,30 @@ function deleteTask(id) {
 }
 
 // =============== DELETE TASK FUNCTION end ============= //
+
+
+// ================ USERNAME FUNCTION start ============== //
+
+(function () {
+
+    let userName = localStorage.getItem('user');
+    let token = localStorage.getItem("token");
+
+    $("#userLogin").innerHTML = `${userName}`;
+
+    if (!token) {
+        location.replace("./login.html")
+    }
+} () )
+
+// ================ USERNAME FUNCTION end ============== //
+
+
+// =============== LOGOUT FUNCTION start ============== //
+
+$('#logout').addEventListener('click', () => {
+    localStorage.clear();
+    location.reload();
+})
+
+// =============== LOGOUT FUNCTION end ============== //

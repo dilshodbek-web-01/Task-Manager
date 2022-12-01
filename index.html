@@ -10,16 +10,22 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- main css -->
     <link rel="stylesheet" href="./styles/style.css">
-    <title>lesson-9</title>
+    <title>Task-manager</title>
 </head>
 <body>
     <!-- header start -->
     <header class="bg-success">
         <div class="container">
-            <nav class="nav p-3 bg-success">
+            <nav class="nav p-3 bg-success d-flex align-items-center justify-content-between w-100">
                 <h3 class="nav-logo text-white">
                     TASK MANAGER APP
                 </h3>
+                <div class="user-info d-flex align-items-center gap-4">
+                    <strong class="p-2 bg-warning rounded-pill" id="userLogin">User name</strong>
+                    <button class="log-out p-2 bg-primary text-white btn">
+                        <i class="bi bi-box-arrow-in-right" id="logout"></i>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
@@ -117,7 +123,6 @@
             </div>
         </section>
     </main>
-
 
     <!-- main end -->
 </body>
